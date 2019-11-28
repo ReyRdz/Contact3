@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Create Contact</title>
+
+<!--Stylesheet Files : jQuery Mobile CSS File, Customized CSS File and Font Awesome for icons -->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+<link rel="stylesheet" href="css/My.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+<!--jQuery File : Library, Mobile Library, Cordova JS and Customized JS File -->
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/My.js"></script>
+</head>
+
+<!--Beginning of the Body-->
+<body>
+<div data-role="page">
+
+<!--Header Bar-->
+<div data-role="header" data-position="fixed" class="ui-header ui-bar-a ui-header-fixed slidedown" role="banner">
+<h1>Contact Me</h1>
+</div>
+<div data-role="main" class="ui-content ui-corner-all" id="main">
+<center><p id="heading">PhoneGap Contacts Plugin</p></center>
+<div data-role="tabs">
+
+<!--Beginning of the Navbar Tabs-->
+<div data-role="navbar">
+<ul>
+
+<!--Tab Buttons : Create Contact, Get All Contacts & Find A Contact-->
+<li><a href="#one" data-theme="a" data-ajax="false">Create Contact</a></li>
+<li><a id="getContact" href="#two" data-theme="a" data-ajax="false">Get All Contacts</a></li>
+<li><a href="#three" data-theme="a" data-ajax="false">Find A Contact</a></li>
+</ul>
+</div>
+
+<!--First tab button functionality-->
+<div id="one" class="ui-content">
+<div id="namediv" class="ui-content">
+<div class="ui-field-contain">
+<label for="textinput-fc">Name:</label>
+<input type="text" name="textinput-fc" id="dname" placeholder="Name" value="">
+</div>
+<div class="ui-field-contain">
+<label for="textinput-fc">Middle Name:</label>
+<input type="text" name="textinput-fc" id="dmname" placeholder="Middle Name" value="">
+</div>
+<div class="ui-field-contain">
+<label for="textinput-fc">Family Name:</label>
+<input type="text" name="textinput-fc" id="dfname" placeholder="Family Name" value="">
+</div>
+</div>
+<div id="numberdiv" class="ui-content">
+<div class="ui-field-contain">
+<label for="textinput-fc">Mobile:</label>
+<input type="text" name="textinput-fc" id="dmob" placeholder="Mobile" value="">
+</div>
+<div class="ui-field-contain">
+<label for="textinput-fc">Other Mobile:</label>
+<input type="text" name="textinput-fc" id="dothermob" placeholder="Other Mobile" value="">
+</div>
+</div>
+<div id="emaildiv" class="ui-content">
+<div class="ui-field-contain">
+<label for="textinput-fc">Email:</label>
+<input type="text" name="textinput-fc" id="demail" placeholder="Email" value="">
+</div>
+</div>
+<div id="addressdiv" class="ui-content">
+<div class="ui-field-contain">
+<label for="textinput-fc">Street Address:</label>
+<input type="text" name="textinput-fc" id="dadd" placeholder="Street Address" value="">
+</div>
+<div class="ui-field-contain">
+<label for="textinput-fc">Region:</label>
+<input type="text" name="textinput-fc" id="dregion" placeholder="Region" value="">
+</div>
+<div class="ui-field-contain">
+<label for="textinput-fc">Country:</label>
+<input type="text" name="textinput-fc" id="dcountry" placeholder="Country" value="">
+</div>
+</div>
+<div id="addressdiv" class="ui-content">
+<div class="ui-field-contain">
+<label for="textinput-fc">Birthday:</label>
+<input type="text" name="textinput-fc" id="dbday" placeholder="Birthday" value="">
+</div>
+<div class="ui-field-contain">
+<label for="textinput-fc">Note:</label>
+<input type="text" name="textinput-fc" id="dnote" placeholder="Note" value="">
+</div>
+<div class="ui-field-contain">
+<label for="textinput-fc">URL:</label>
+<input type="text" name="textinput-fc" id="durl" placeholder="URL" value="">
+</div>
+</div>
+<a href="#" id="createContact" class="ui-shadow ui-btn ui-corner-all">Save Contact</a>
+</div>
+<!--End of First tab button-->
+
+<!--Beginning of the second tab button-->
+<div id="two" class="ui-content">
+<table data-role="table" data-mode="reflow" class="ui-responsive ui-shadow" id="myTable"></table>
+</div>
+<!--End of second tab button-->
+
+<!--Beginning of the third tab button-->
+<div id="three" class="ui-content">
+<h1>Find A Contact</h1>
+<div class="ui-field-contain">
+<label for="textinput-fc">Enter Contact's Name:</label>
+<input type="text" name="textinput-fc" id="searchitin" placeholder="Find a contact you want to search" value="">
+<a href="#" id="searchit" class="ui-shadow ui-btn ui-corner-all">Search Contact</a>
+<table data-role="table" data-mode="reflow" class="ui-responsive ui-shadow" id="searchTable"></table>
+</div>
+</div>
+<!--End of third tab button-->
+
+</div>
+</div>
+</div>
+</body>
+<!--End of the Body-->
+</html>
